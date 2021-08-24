@@ -690,6 +690,10 @@ a.badge:focus {
   text-decoration: line-through;
 }
 
+
+.services{
+  padding-top: 80px;
+}
 .services .box-container{
   display: flex;
   flex-wrap: wrap;

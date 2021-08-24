@@ -1,40 +1,56 @@
 <template>
   <div>
+    <section class="packages container" id="packages">
+      <h2 class="text-fx-blue text-center">Actualité</h2>
+      
+      
+      <div class="box-container">
+         <div class=" card"  style="width: 18rem" v-for="post in posts" v-bind:key="post.key">
+        <!-- <div class="card"> -->
+          <h5 class="card-title " style="background-color:var(--fx-blue)">Special title treatment</h5>
+          <img src="~/assets/images/1.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+             <h3 v-html="post.title.rendered"><i class="fas fa-clock"></i></h3>
+            <p class="card-text" v-html="subStr(post.content.rendered)">
+           
+            </p>
  
-<section class="packages container" id="packages">
+           
 
-    <h2 class="text-fx-blue text-center">Actualité</h2>
+            <nuxt-link
+              :to="{
+                name: 'blog-slug',
+                params: { slug: post.slug, id: post.id },
+              }"
+            >
+              Lire plus</nuxt-link
+            >
+         
 
-    <div class="box-container">
-
-        <div class="box" v-for="post in posts" v-bind:key="post.key">
-            <img src="~/assets/images/1.jpg" alt="">
-            <div class="content">
-                <h3 v-html="post.title.rendered"> <i class="fas fa-clock"></i>  </h3>
-                <p v-html="subStr(post.content.rendered)"></p>
-               
                 
-                <a href="#" class="btn-demo">Voir plus</a>
-            </div>
-        </div>      
 
-    </div>
+          </div>
+        </div>
+ 
+      </div>
+    </section>
 
-</section>
+
+    
   </div>
 </template>
 
 <script>
 export default {
   mounted() {
-  var swiper = new Swiper(".review-slider", {
-    spaceBetween: 20,
-    loop:true,
-    autoplay: {
+    var swiper = new Swiper(".review-slider", {
+      spaceBetween: 20,
+      loop: true,
+      autoplay: {
         delay: 2500,
         disableOnInteraction: false,
-    },
-    breakpoints: {
+      },
+      breakpoints: {
         640: {
           slidesPerView: 1,
         },
@@ -44,17 +60,17 @@ export default {
         1024: {
           slidesPerView: 3,
         },
-    },
-});
+      },
+    });
 
-var swiper = new Swiper(".brand-slider", {
-    spaceBetween: 20,
-    loop:true,
-    autoplay: {
+    var swiper = new Swiper(".brand-slider", {
+      spaceBetween: 20,
+      loop: true,
+      autoplay: {
         delay: 2500,
         disableOnInteraction: false,
-    },
-    breakpoints: {
+      },
+      breakpoints: {
         450: {
           slidesPerView: 2,
         },
@@ -68,12 +84,12 @@ var swiper = new Swiper(".brand-slider", {
           slidesPerView: 5,
         },
       },
-});
+    });
   },
   computed: {
     posts() {
       return this.$store.state.posts;
-      // return []
+       
     },
   },
   mounted() {
@@ -81,7 +97,6 @@ var swiper = new Swiper(".brand-slider", {
     this.getPosts().then((posts) => {
       console.log(posts);
       this.$store.commit("frontPagePosts", posts);
-      
     });
   },
   data() {
@@ -90,7 +105,7 @@ var swiper = new Swiper(".brand-slider", {
   methods: {
     async getPosts() {
       try {
-        const response = await this.$axios.$get("/posts/?per_page=20");
+        const response = await this.$axios.$get("/posts/?per_page=100");
         if (response) {
           console.log(response);
           return response;
@@ -100,9 +115,9 @@ var swiper = new Swiper(".brand-slider", {
       }
     },
 
-    subStr(str){
-      return str.substring(0, str.length > 50 ? 50 :str.length) + "..."
-    }
+    subStr(str) {
+      return str.substring(0, str.length > 50 ? 50 : str.length) + "...";
+    },
   },
 };
 </script>

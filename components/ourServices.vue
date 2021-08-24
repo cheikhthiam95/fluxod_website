@@ -7,7 +7,7 @@
         <carousselle/> 
       </div>
     </section> --> 
-    <section class=" fx-container services">
+    <section class=" services">
       <!--heading---------------->
       <!-- <div class="s-heading"> -->
         <!-- <h1>Ser<font color="var(--fxblue-color)">vic</font>es</h1> -->
@@ -18,9 +18,9 @@
         <!--service-box-1---------------->
         <div class="s-box">
           <!--top-bar-------->
-          <div class="bar"></div>
+          <!-- <div class="bar"></div> -->
           <!--img---------->
-         <span> <i class="fab fa-android"></i> </span>
+         <span> <i class=""></i> </span>
           <!--servies-name---------->
           <h1>1 plateforme</h1>
           <!--details------>
@@ -36,7 +36,7 @@
         <!--service-box-1---------------->
         <div class="s-box">
           <!--top-bar-------->
-          <div class="bar"></div>
+          <!-- <div class="bar"></div> -->
           <!--img---------->
          <span>  </span>
           <!--servies-name---------->
@@ -64,7 +64,7 @@
         <!--service-box-3---------------->
         <div class="s-box">
           <!--top-bar-------->
-          <div class="bar"></div>
+          <!-- <div class="bar"></div> -->
           <!--img---------->
          <span> </span>
           <!--servies-name---------->

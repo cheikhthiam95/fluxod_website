@@ -77,10 +77,10 @@ export default {
   },
   mounted() {
     console.log("Allpo");
-    this.getPosts().then((posts) => {
-      console.log(posts);
-      this.$store.commit("frontPagePosts", posts);
-    });
+    // this.getPosts().then((posts) => {
+    //   console.log(posts);
+    //   this.$store.commit("frontPagePosts", posts);
+    // });
 
     // var self = this;
     // self.navbar = document.getElementById("navbar");
@@ -93,17 +93,17 @@ export default {
     return {};
   },
   methods: {
-    async getPosts() {
-      try {
-        const response = await this.$axios.$get("/pages");
-        if (response) {
-          console.log(response);
-          return response;
-        }
-      } catch (error) {
-        console.log("ici", error);
-      }
-    },
+    // async getPosts() {
+    //   try {
+    //     const response = await this.$axios.$get("/pages");
+    //     if (response) {
+    //       console.log(response);
+    //       return response;
+    //     }
+    //   } catch (error) {
+    //     console.log("ici", error);
+    //   }
+    // },
 
 
     // documentIsCrolled() {

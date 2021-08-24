@@ -4,33 +4,39 @@
       <h1>Fonctionnalités principales</h1>
       <div class="cen">
         <div class="solution">
-          <i class="fas fa-anchor"></i>
-          <h2>affaires</h2>
+         <i class="fas fa-business-time"></i>
+          <a href="#affaires"> <h2>affaires</h2> </a>
+        </div>
+
+        <div class="solution"> 
+          <i class="fas fa-bullseye"></i>
+          <a href="#missions"><h2 class="fx-hight-light">Missions</h2></a>
         </div>
 
         <div class="solution">
-          <i class="fab fa-android"></i>
-          <h2 class="fx-hight-light">Missions</h2>
+          <i class="fas fa-users"></i>
+          
+          <a href="#ressources_humaines"><h2>Rh</h2></a>
         </div>
 
         <div class="solution">
-          <i class="fab fa-angellist"></i>
-          <h2>Rh</h2>
+         <i class="fas fa-chart-line"></i>
+          <a href="#finance"><h2>Finance</h2></a>
         </div>
 
         <div class="solution">
-          <i class="fas fa-apple-alt"></i>
-          <h2>Finance</h2>
+          <i class="fas fa-poll"></i>
+          <i class="fas fa-bullseye-pointer"></i>
+          <a href="#gestion_de_la_qualite"><h2>Qualité</h2></a>
+
+          
         </div>
 
         <div class="solution">
-          <i class="fas fa-archway"></i>
-          <h2>Qualité</h2>
-        </div>
-
-        <div class="solution">
-          <i class="far fa-angry"></i>
-          <h2>Activités</h2>
+           
+          <i class="fas fa-tasks"></i>
+          <a href="#gestion_des_activite"><h2>Activités</h2></a>
+          
         </div>
       </div>
     </div>
@@ -115,7 +121,7 @@ Ce module vous permettra de gérer et de suivre efficacement le planning de prod
       </div>
 
 
-    <hr class="fx-hr">
+    <!-- <hr class="fx-hr"> -->
 
 
         <div id="affaires" class="row solutions-section">
@@ -248,10 +254,10 @@ Vous facilitez le travail de vos commerciaux en les dotant d’un outil collabor
         </div>
    
       </div>
-    <hr class="fx-hr">
+    <!-- <hr class="fx-hr"> -->
 
 
-        <div id="affaires" class="row solutions-section">
+        <div id="ressources_humaines" class="row solutions-section">
           <div class="col-12"><h2 class="text-fx-blue text-center">Ressources Humaines</h2></div>
 
 
@@ -338,7 +344,7 @@ Transmission donnés paie/sociale
         </div>
    
       </div>
-    <hr class="fx-hr">
+    <!-- <hr class="fx-hr"> -->
 
         <div id="gestion_de_la_qualite" class="row solutions-section">
           <div class="col-12"><h2 class="text-fx-blue text-center">Gestion de la qualité</h2></div>
@@ -435,7 +441,7 @@ Faciliter la certification ISO 9001
         </div>
    
       </div>
-    <hr class="fx-hr">
+    <!-- <hr class="fx-hr"> -->
 
             <div id="finance" class="row solutions-section">
           <div class="col-12"><h2 class="text-fx-blue text-center">Finance</h2></div>
@@ -521,7 +527,7 @@ La direction financière va également pouvoir configurer les coûts de structur
       </div>
 
 
-      <hr>
+      <!-- <hr> -->
 
               <div id="gestion_des_activite" class="row solutions-section">
           <div class="col-12"><h2 class="text-fx-blue text-center">Gestion des activités</h2></div>
@@ -631,10 +637,10 @@ Les différents écrans de ce module disposent également d'une version optimis�
 </template>
  <script>
 export default {
-  mounted() {
-    // $(".carousel").carousel();
-    window.addEventListener("scroll", this.reveal);
-  },
+  // mounted() {
+  //   // $(".carousel").carousel();
+  //   window.addEventListener("scroll", this.reveal);
+  // },
   methods: {
     reveal() {
       console.log("Scroling****");
@@ -694,7 +700,8 @@ body {
   /* transition: 0.4s; */
 }
 .solution:hover {
-  border: #009dc9 solid 0.5px;
+  /* border: #009dc9 solid 0.5px; */
+  box-shadow: 0 1rem 2rem rgb(0 0 0 / 10%);
 
   /* background: #ddd; */
 }
