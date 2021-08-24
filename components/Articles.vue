@@ -90,7 +90,7 @@ var swiper = new Swiper(".brand-slider", {
   methods: {
     async getPosts() {
       try {
-        const response = await this.$axios.$get("/posts/?per_page=20");
+        const response = await this.$axios.$get("/categories/");
         if (response) {
           console.log(response);
           return response;

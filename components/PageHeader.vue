@@ -100,7 +100,9 @@ export default {
   .object {
   animation: up-douwn 2s ease-in-out infinite alternate-reverse both; 
 }
-
+a:hover{
+  text-decoration:none;
+}
 @keyframes up-douwn {
   0%{
     transform: translateY(10px);

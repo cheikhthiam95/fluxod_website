@@ -6,7 +6,7 @@
 
     <solution-list/>
 
-    <post-card/>
+    <post-card />
 
     <!-- Cli -->
     <!-- <section class="cli">
@@ -37,11 +37,7 @@
       <div class="fx-container grid"></div>
     </section>
 
-    <!-- Languages -->
-    <section class="languages">
-      <h2 class="md text-center my-2">un tritre sympa</h2>
-      <div class="fx-container flex"></div>
-    </section>
+ 
 
     <!-- Footer -->
     <footer class="footer bg-dark py-5">
