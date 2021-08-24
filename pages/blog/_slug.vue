@@ -1,10 +1,27 @@
 <template>
   <div>
-    <div v-if="post.length > 0">
+    <!-- Showcase -->
+    <section v-if="post.title" class="header-section">
+      <div class="fx-container">
+        <div>
+          <h1 class="xl" v-html="post.title.rendered"></h1>
+          <!-- <p>
+            Cabinets de conseil, SSII, bureaux d'études : tous vos processus
+            métiers au sein d'une même solution. Des dizaines de cabinets de
+            conseil ou sociétés de services nous font confiance et tirent profit
+            de Fluxod, rejoignez-les !   
+          </p> -->
+        </div>
 
-        <div v-html="post.id">{{post.excerpt.rendered}}</div>
-
-    </div>
+        
+      </div>
+    </section>
+   
+    <section style="z-index:100000!important" v-if="post.content">
+      <div class="fx-container">
+        <p v-html="post.content.rendered"></p>
+      </div>
+    </section>
   </div>
 </template>
 

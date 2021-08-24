@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="solutions">
+    <div class="solutions  container">
       <h1>Fonctionnalités principales</h1>
       <div class="cen">
         <div class="solution">

@@ -6,6 +6,7 @@
 
     <solution-list/>
 
+    <!-- <hr class="fx-hr"> -->
     <post-card />
 
     <!-- Cli -->
@@ -38,30 +39,7 @@
     </section>
 
  
-
-    <!-- Footer -->
-    <footer class="footer bg-dark py-5">
-      <div class="fx-container grid grid-3">
-        <div>
-          <h1>Fluxod</h1>
-          <p>Copyright &copy; 2021</p>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="index.html">Visite guidée</a></li>
-            <li><a href="features.html">Services</a></li>
-            <li><a href="features.html">Société</a></li>
-            <li><a href="docs.html">Blog </a></li>
-          </ul>
-        </nav>
-        <div class="social">
-          <a href="#"><i class="fab fa-github fa-2x"></i></a>
-          <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-          <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
-          <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-        </div>
-      </div>
-    </footer>
+ 
   </div>
 </template>
 

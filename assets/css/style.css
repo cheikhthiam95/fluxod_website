@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 
 :root {
@@ -171,6 +171,17 @@ ol ol li::before {
   height: 70px ;
 }
 
+
+
+.header-section {
+  height: 400px;
+  /* background-color: var(--white-color); */
+  color: var(--fxblue-dark);
+  overflow: hidden;
+  position: relative;
+  background-image: linear-gradient(to right, var(--white-color),#00a2d070);
+}
+
 /* Showcase */
 .showcase {
   height: 400px;
@@ -203,6 +214,8 @@ ol ol li::before {
 .text-fx-blue {
   color: var(--fxblue-color)!important;
   font-weight: bold;
+}.text-fx-blue-slim {
+  color: var(--fxblue-color)!important; 
 }
 
 /* .fx-box{
