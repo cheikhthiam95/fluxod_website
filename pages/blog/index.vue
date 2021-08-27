@@ -2,9 +2,9 @@
   <div>
     <!-- Showcase -->
     <section v-if="post.title" class="header-section">
-      <div class="fx-container">
+      <div class="fx-container"> 
         <div>
-          <h1 class="xl" v-html="post.title.rendered"></h1>
+          <h1 class="xl" v-html="this.$route.datz"></h1>
           <!-- <p>
             Cabinets de conseil, SSII, bureaux d'études : tous vos processus
             métiers au sein d'une même solution. Des dizaines de cabinets de
@@ -43,7 +43,7 @@ export default {
     async getPost() {
       try {
         const response = await this.$axios.$get(
-          "/posts/" + this.$route.params.id
+          "/posts?orderby=date&order=desc&after=/"+this.$route.params.date+" 00:00:00"
         );
         if (response) {
           console.log(response);

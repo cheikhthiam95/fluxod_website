@@ -2,12 +2,13 @@
   <div>
     <page-header />
 
-    <our-services />
+    <our-services /> 
 
     <solution-list/>
-
-    <!-- <hr class="fx-hr"> -->
+ 
+    <!-- <categorie-card /> -->
     <post-card />
+
 
     <!-- Cli -->
     <!-- <section class="cli">

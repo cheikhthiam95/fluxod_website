@@ -112,13 +112,13 @@ a{
 .s-box img{
 	height: 75px;
 }
-.s-box h1{
-	color:#576975;
-	letter-spacing: 1px;
-	font-size: 1.5rem;
-	margin-bottom: 8px;
+// .s-box h1{
+// 	color:#576975;
+// 	letter-spacing: 1px;
+// 	font-size: 1.5rem;
+// 	margin-bottom: 8px;
 	
-}
+// }
 .s-box p{
 	color: rgba(87,105,117,0.90);
 	text-align: center;

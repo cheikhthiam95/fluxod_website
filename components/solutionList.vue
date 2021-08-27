@@ -1,7 +1,8 @@
 <template>
-  <div>
-    <div class="solutions  container">
-      <h1>Fonctionnalités principales</h1>
+  <div class="fx- container">   <hr class="fx-hr">
+    <div data-aos="fade-up" data-aos-delay="350" class="solutions">
+      
+      <h1 class="fx-section-title lg">Fonctionnalités principales</h1>
       <div class="cen">
         <div class="solution">
          <i class="fas fa-business-time"></i>
@@ -10,7 +11,7 @@
 
         <div class="solution"> 
           <i class="fas fa-bullseye"></i>
-          <a href="#missions"><h2 class="fx-hight-light">Missions</h2></a>
+          <a href="#missions"><h2>Missions</h2></a>
         </div>
 
         <div class="solution">
@@ -41,8 +42,8 @@
       </div>
     </div>
     
-    <div class="fx-container">
-      <div id="missions" class="row solutions-section">
+    <div class="fx-container" style="overflow:hidden">
+      <div id="missions" data-aos="fade-up" data-aos-delay="350" class="row solutions-section">
           <div class="col-12"><h2 class="text-fx-blue text-center">Missions</h2></div>
 
         <div class="col-md-6 col-sm-12 col-xs-12 col-lg-6">
@@ -124,7 +125,7 @@ Ce module vous permettra de gérer et de suivre efficacement le planning de prod
     <!-- <hr class="fx-hr"> -->
 
 
-        <div id="affaires" class="row solutions-section">
+        <div id="affaires" data-aos="fade-up" data-aos-delay="350" class="row solutions-section">
           <div class="col-12"><h2 class="text-fx-blue text-center">Affaires</h2></div>
 
 
@@ -257,7 +258,7 @@ Vous facilitez le travail de vos commerciaux en les dotant d’un outil collabor
     <!-- <hr class="fx-hr"> -->
 
 
-        <div id="ressources_humaines" class="row solutions-section">
+        <div id="ressources_humaines" data-aos="fade-up" data-aos-delay="350" class="row solutions-section">
           <div class="col-12"><h2 class="text-fx-blue text-center">Ressources Humaines</h2></div>
 
 
@@ -346,7 +347,7 @@ Transmission donnés paie/sociale
       </div>
     <!-- <hr class="fx-hr"> -->
 
-        <div id="gestion_de_la_qualite" class="row solutions-section">
+        <div id="gestion_de_la_qualite" data-aos="fade-up" data-aos-delay="350" class="row solutions-section">
           <div class="col-12"><h2 class="text-fx-blue text-center">Gestion de la qualité</h2></div>
 
 
@@ -443,7 +444,7 @@ Faciliter la certification ISO 9001
       </div>
     <!-- <hr class="fx-hr"> -->
 
-            <div id="finance" class="row solutions-section">
+            <div id="finance" data-aos="fade-up" data-aos-delay="350" class="row solutions-section">
           <div class="col-12"><h2 class="text-fx-blue text-center">Finance</h2></div>
 
 
@@ -529,7 +530,7 @@ La direction financière va également pouvoir configurer les coûts de structur
 
       <!-- <hr> -->
 
-              <div id="gestion_des_activite" class="row solutions-section">
+              <div id="gestion_des_activite" data-aos="fade-up" data-aos-delay="350" class="row solutions-section">
           <div class="col-12"><h2 class="text-fx-blue text-center">Gestion des activités</h2></div>
 
 
@@ -633,6 +634,8 @@ Les différents écrans de ce module disposent également d'une version optimis�
       </div>
 
     </div>
+
+    <hr class="fx-hr"> 
   </div>
 </template>
  <script>
@@ -673,17 +676,10 @@ body {
   font-family: "montserrat", sans-serif;
 }
 .solutions {
-  background: #f1f1f1;
+  background: white;
   text-align: center;
 }
-.solutions h1 {
-  display: inline-block;
-  text-transform: uppercase;
-  border-bottom: 4px solid #009dc9;
-  font-size: 20px;
-  padding-bottom: 10px;
-  margin-top: 40px;
-}
+ 
 .cen {
   max-width: 1200px;
   margin: auto;
@@ -717,11 +713,7 @@ body {
   padding-left: 50px;
   /* margin: 0; */
 }
-.solution p {
-  color: gray;
-  font-size: 15px;
-  font-weight: 500;
-}
+ 
 @media screen and (max-width: 800px) {
   .solution {
     width: 50%;
